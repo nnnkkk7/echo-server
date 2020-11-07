@@ -35,7 +35,6 @@ func main() {
 	e.GET("/api/comments/:id", controller.GetComment)
 	e.GET("/api/comments/", controller.ListComments)
 	e.POST("/api/comments/", controller.InsertComment)
-	e.Static("/", "static/")
 	e.Logger.Fatal(e.Start(":8989"))
 
 }
